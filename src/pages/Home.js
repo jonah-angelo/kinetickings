@@ -7,10 +7,17 @@ import SearchExercises from '../components/SearchExercises';
 
 
 const Home = () => {
+    const [bodyPart, setBodyPart] = useState('all')
+    const [exercises, setExercises] = uEeState([])
+
+
     return (
         <Box>
             <HeroBanner />
-            <SearchExercises />
+            <SearchExercises
+                setExercises={setExercises}
+                bodyPart={bodyPart}
+                setBodyPart={setBodyPart} />
             <Exercises />
         </Box>
     )
