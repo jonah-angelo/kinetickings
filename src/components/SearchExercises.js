@@ -4,6 +4,11 @@ import { Box, Button, Stack, TextField, Typography } from '@mui/material'
 
 const SearchExercises = () => {
     const [search, setSearch] = useState('')
+    const handleSearch = async () => {
+        if (search) {
+            // const exercisesData = await fetchData();
+        }
+    }
 
     return (
         <Stack alignItems='center' mt='37px'
@@ -47,6 +52,7 @@ const SearchExercises = () => {
                         position: 'absolute',
                         right: '0'
                     }}
+                    onClick={handleSearch}
                 >
                     Search
                 </Button>
