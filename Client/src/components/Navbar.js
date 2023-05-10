@@ -32,6 +32,9 @@ export const Navbar = () => {
                 <a href="#exercises" style={{
                     textDecoration: 'none', color: '#3A1212'
                 }}>Exercise</a>
+                <Link to="posts" style={{
+                    textDecoration: 'none', color: '#3A1212'
+                }}>Posts</Link>
             </Stack>
         </Stack>
     )
