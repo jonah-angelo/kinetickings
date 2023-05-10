@@ -29,11 +29,10 @@ const Detail = ({ exerciseDetail }) => {
             <Stack sx={{
                 gap: { lg: '35px', xs: '20px' }
             }}>
-                <Typography variant='h3' fontWeight='550' mt='80px'>
+                <Typography variant='h3' fontWeight='550' mt='80px' textTransform='capitalize'>
                     {name}
                 </Typography>
                 <Typography variant='h6' mt='40px'>
-
                     {name} is one of the best exercises for your {bodyPart} and {target}. <br />
                     It is a {equipment} exercise that primarily targets the {target} and to a lesser degree also targets the {bodyPart}.
                 </Typography>
